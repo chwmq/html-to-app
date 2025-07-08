@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Documentation â€” Convertify</title>
+    <link rel="canonical" href="https://convertify.app/docs" /><meta charset=UTF-8"utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta itemprop="name" content="Convertify â€” Convert website to mobile app (Android & iOS)">
+<meta itemprop="description" content="Convert website to mobile app (Android & iOS) just submitting your website url. Includes push notifications and you can publish to Apple App Store & Play Store">
+<meta itemprop="image" content="https://www.convertify.app/assets/img/screely-producthunt1.png">
+<meta property="og:url" content="https://www.convertify.app/">
+<meta property="og:title" content="Convertify â€” Convert website to mobile app (Android & iOS)">
+<meta name="og:description" content="Convert website to mobile app (Android & iOS) just submitting your website url. Includes push notifications and you can publish to Apple App Store & Play Store">
+<meta property="og:site_name" content="Convertify">
+<meta property="og:image" content="https://www.convertify.app/assets/img/background.png">
+<meta property="og:type" content="website">
+<meta name="robots" content="all">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ConvertifyApp">
+<meta property="twitter:title" content="Convertify â€” Convert website to mobile app (Android & iOS)">
+<meta name="twitter:creator" content="@ConvertifyApp">
+<meta name="twitter:description" content="Convert website to mobile app (Android & iOS) just submitting your website url. Includes push notifications and you can publish to Apple App Store & Play Store">
+<meta name="twitter:image" content="https://www.convertify.app/assets/img/background.png">
+<link rel="apple-touch-icon" href="/assets/img/logochicken-square.png">
+<link rel="icon" type="image/png" href="/assets/img/logochicken.png" />
+<link rel="manifest" href="/assets/img/bmc-meta/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<script src="vue@2.6.14.js" tppabs="https://convertify.app/vue-scripts/vue@2.6.14.js"></script>
+<script src="axios.min.js" tppabs="https://convertify.app/vue-scripts/axios.min.js"></script>
+                <link rel="stylesheet" href="body.css" tppabs="https://convertify.app/css/body.css">
+
+        <link rel="stylesheet" href="convertify.css" tppabs="https://convertify.app/css/convertify.css">
+
+
+        <link href="css-family=Lato.css" tppabs="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+                <link href="css-family=Cookie.css" tppabs="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org/",
+          "@type": "Organization",
+          "name": "Convertify",
+          "url": "https://www.convertify.app/",
+          "logo": "https://convertify.app/assets/img/logo512.png",
+          "sameAs": [
+            "https://www.facebook.com/convertifyapp/",
+            "https://www.instagram.com/Convertifyapp/",
+            "https://www.twitter.com/ConvertifyApp"
+          ]
+        }</script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="js-id=UA-128070755-1" tppabs="https://www.googletagmanager.com/gtag/js?id=UA-128070755-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function analytics(){dataLayer.push(arguments);}
+  analytics('js', new Date());
+
+  analytics('config', 'UA-128070755-1');
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '311851729315619');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="tr-id=311851729315619&ev=PageView&noscript=1" tppabs="https://www.facebook.com/tr?id=311851729315619&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- DO NOT MODIFY -->
+<!-- Quora Pixel Code (JS Helper) -->
+<script>
+!function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+qp('init', '6ceeb4f01def4ddc8ea26df8e0bf38dc');
+qp('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="pixel-tag=ViewContent&noscript=1" tppabs="https://q.quora.com/_/ad/6ceeb4f01def4ddc8ea26df8e0bf38dc/pixel?tag=ViewContent&noscript=1"/></noscript>
+<!-- End of Quora Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Ads: 780679538 -->
+<script async src="js-id=AW-780679538" tppabs="https://www.googletagmanager.com/gtag/js?id=AW-780679538"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-780679538');
+</script>
+
+
+
+<script>
+  window.intercomSettings = {
+    app_id: "gn762szc"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='gn762szc'/*tpa=https://widget.intercom.io/widget/gn762szc*/;var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+ <style>
+ @media (min-width: 992px){
+.ex-second .tab-head {
+    margin-bottom: 25px;
+}}
+ </style>
+</head>
+
+<body class="body-color">
+<style>
+@media (max-width:991px) {
+  .imgnav{
+    margin-left:-15px;
+  }
+}
+@media (max-width:767px) {
+  .discountbox{
+    /* position: initial!important; */
+    margin-top: -1px!important;
+    width:100%!important;
+  }
+  .imgnav{
+    margin-left:0px;
+  }
+}
+</style>
+<nav id="lanav" class="navbar navbar-default fade-down dash-navbar ">
+<div class="container p-relative">
+<div class="navbar-header">
+<a class="logo-text float-l" href="index.htm" tppabs="https://convertify.app/">
+<img style="width: 250px;margin-top: -5.5px;" src="nuevo-largo-chicken.png" tppabs="https://convertify.app/assets/img/nuevo-largo-chicken.png" class="imgnav"></img>
+</a>
+<div v-show="!toggle" @click="menu" class="menu-icon bmc-open-btn">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+<div v-show="toggle" @click="menu" class="menu-icon bmc-open-btn change" style="display:none;">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</div>
+<!-- DESKTOP -->
+<div class="collapse navbar-collapse bmc-collapse navmobiledesaparecer" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right lg-view m-nr-20 nav-link">
+<li><a class="right-pagelink" href="features.htm" tppabs="https://convertify.app/features">Features</a></li>
+<li><a class="right-pagelink" href="examples.htm" tppabs="https://convertify.app/examples">Examples</a></li>
+<li class="navbar-link"><a href="faq.htm" tppabs="https://convertify.app/faq">FAQ</a></li>
+<li><a class="right-pagelink" href="pricing.htm" tppabs="https://convertify.app/pricing">Pricing</a></li>
+<li><a class="btn-orange normal-btn btn-m moz-header-btn" href="convert.htm" tppabs="https://convertify.app/convert">Convert</a></li>
+</ul>
+<ul class="nav navbar-nav nav-link navbar-right">
+</ul>
+<ul class="nav navbar-nav nav-link m-l-header">
+</ul>
+<ul class="nav navbar-nav sm-view">
+<li class="navbar-link"><a href="features.htm" tppabs="https://convertify.app/features">Features</a></li>
+<li class="navbar-link"><a href="examples.htm" tppabs="https://convertify.app/examples">Examples</a></li>
+<li class="navbar-link"><a href="faq.htm" tppabs="https://convertify.app/faq">FAQ</a></li>
+<li class="navbar-link"><a href="pricing.htm" tppabs="https://convertify.app/pricing">Pricing</a></li>
+<li class="navbar-link"><a href="convert.htm" tppabs="https://convertify.app/convert">Convert</a></li>
+</ul>
+</div>
+<!-- MOBILE -->
+<div v-show="toggle" class="navmobileaparecer" id="bs-example-navbar-collapse-1" style="display:none;">
+<ul class="nav navbar-nav navbar-right lg-view m-nr-20 nav-link">
+<li><a class="right-pagelink" href="features.htm" tppabs="https://convertify.app/features">Features</a></li>
+<li><a class="right-pagelink" href="examples.htm" tppabs="https://convertify.app/examples">Examples</a></li>
+<li class="navbar-link"><a href="faq.htm" tppabs="https://convertify.app/faq">FAQ</a></li>
+<li><a class="right-pagelink" href="pricing.htm" tppabs="https://convertify.app/pricing">Pricing</a></li>
+<li><a class="btn-orange normal-btn btn-m moz-header-btn" href="convert.htm" tppabs="https://convertify.app/convert">Convert</a></li>
+</ul>
+<ul class="nav navbar-nav nav-link navbar-right">
+</ul>
+<ul class="nav navbar-nav nav-link m-l-header">
+</ul>
+<ul class="nav navbar-nav sm-view">
+<li class="navbar-link"><a href="features.htm" tppabs="https://convertify.app/features">Features</a></li>
+<li class="navbar-link"><a href="examples.htm" tppabs="https://convertify.app/examples">Examples</a></li>
+<li class="navbar-link"><a href="faq.htm" tppabs="https://convertify.app/faq">FAQ</a></li>
+<li class="navbar-link"><a href="pricing.htm" tppabs="https://convertify.app/pricing">Pricing</a></li>
+<li class="navbar-link"><a href="convert.htm" tppabs="https://convertify.app/convert">Convert</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<style>
+@media (max-width:767px) {
+  .logo-text{
+    margin-top:9px!important;
+  }
+  .imgnav{
+    width:250px!important;
+  }
+}
+</style>
+
+<script>
+var frank = new Vue({
+  el:'#lanav',
+  data:{
+    toggle: false
+  },
+  methods: {
+    menu(){
+      if(!this.toggle){
+        this.toggle = true;
+      }
+      else{
+        this.toggle = false;
+      }
+    }
+        }
+});
+</script>
+    <!-- <div id="wrapper"> -->
+<div class="container m-t-header m-b-footer">
+  <h3 style="margin-bottom:35px;" class="tab-head m-t-50 xs-text-center l-h-28">Convertify Documentation</h3>
+
+<!-- slider -->
+
+    <div class="">
+
+
+
+      <div class="col-xs-12 col-md-12 random-tile p-l-0">
+
+
+        <div id="filter-result">
+
+
+
+<a href="android.htm" tppabs="https://convertify.app/docs/android">
+        <!-- old tile -->
+                <div class="col-xs-12 col-sm-12 p-0 tile-each">
+          <div style="width:100%!important;" class="ex-creator-tile p-20">
+            <div class="flex m-b-15">
+              <div class="flex-l">
+                <div class="flex">
+                    <div class="">
+                      <img src="android-feature.png" tppabs="https://convertify.app/assets/img/android-feature.png" style=" width: 50px; display: inline-block; ">
+                    <p style="margin-left:-8px;display: inline-block; vertical-align: middle;" class="ex-creator-name-s p-l-10 limit-line-1">Android</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <p style="margin-right: 30px;" class="ex-text m-r-0">Learn all the quirks and features of your Android app.</p>
+
+          </div>
+        </div>
+        <!-- /.. old tile -->
+</a>
+
+
+<a href="ios.htm" tppabs="https://convertify.app/docs/ios">
+
+        <!-- old tile -->
+                <div class="col-xs-12 col-sm-12 p-0 tile-each">
+          <div style="width:100%!important;" class="ex-creator-tile p-20">
+            <div class="flex m-b-15">
+              <div class="flex-l">
+                <div class="flex">
+                    <div class="">
+                      <img src="ios-feature.svg" tppabs="https://convertify.app/assets/img/ios-feature.svg" style=" width: 50px; display: inline-block; ">
+                      <p style="margin-left:-8px;display: inline-block; vertical-align: middle;" class="ex-creator-name-s p-l-10 limit-line-1">iOS</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <p style="margin-right: 30px;" class="ex-text m-r-0">Learn how to customize your iOS app.</p>
+
+          </div>
+        </div>
+        <!-- /.. old tile -->
+      </a>
+
+
+        <a href="push-notifications.htm" tppabs="https://convertify.app/docs/push-notifications">
+
+        <!-- old tile -->
+                <div class="col-xs-12 col-sm-12 p-0 tile-each">
+          <div style="width:100%!important;" class="ex-creator-tile p-20">
+            <div class="flex m-b-15">
+              <div class="flex-l">
+                <div class="flex">
+                    <div class="">
+                      <img src="push.png" tppabs="https://convertify.app/assets/img/push.png" style=" width: 50px; display: inline-block; ">
+                      <p style="margin-left:-8px;display: inline-block; vertical-align: middle;" class="ex-creator-name-s p-l-10 limit-line-1">Push Notifications</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <p style="margin-right: 30px;" class="ex-text m-r-0">Learn how to send push notifications to your users. Automate your communication and engage with your users. You will be able to send unlimited notifications to unlimited subscribers.</p>
+
+          </div>
+        </div>
+        <!-- /.. old tile -->
+      </a>
+
+
+        <a href="publish.htm" tppabs="https://convertify.app/docs/publish">
+
+        <!-- old tile -->
+                <div class="col-xs-12 col-sm-12 p-0 tile-each">
+          <div style="width:100%!important;" class="ex-creator-tile p-20">
+            <div class="flex m-b-15">
+              <div class="flex-l">
+                <div class="flex">
+                    <div class="">
+                      <img src="appstore.png" tppabs="https://convertify.app/assets/img/appstore.png" style=" width: 40px; display: inline-block; ">
+                      <img src="play.png" tppabs="https://convertify.app/assets/img/play.png" style=" width: 50px; display: inline-block; ">
+                      <p style="margin-left:-8px;display: inline-block; vertical-align: middle;" class="ex-creator-name-s p-l-10 limit-line-1">Publish to App Store and Play Store</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <p style="margin-right: 30px;" class="ex-text m-r-0">Learn how to easily publish your apps to the App Store and Play Store. You will be able to submit your apps in less than 24 hours</p>
+
+          </div>
+        </div>
+        <!-- /.. old tile -->
+      </a>
+
+
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+</div>
+<!-- </div> -->
+<!-- /#wrapper -->
+
+<div class="paddingresmobile" style="padding-bottom: 280px;"></div>
+<div id="elfooter" class="bmc-footer" style="position: relative;background-color: #fff;padding-top: 70px;box-shadow: 0 1px 2px rgba(190,190,190,.5)!important;position: absolute;bottom: 0;width: 100%;">
+<div class="footer-sec-1 row m-0 mob-footer" style="border-bottom: 1px solid rgba(151,151,151,.1);padding-bottom: 35px;display: flex;justify-content: space-between;">
+<div class="flex mob-ftr-left">
+<div class="m-r-20 m-r-20footer ftr-mb-w-100">
+<img style="width: 40px!important;" src="logochicken.png" tppabs="https://convertify.app/assets/img/logochicken.png" class="imgnav">
+</div>
+<div class="footer-links ftr-mb-w-100" style="display: flex;align-items: center;">
+<div class="flex mob-ftr-block">
+<a href="affiliate.htm" tppabs="https://convertify.app/affiliate" class="fs-15 av-heavy color-black m-r-30 m-r-30footer sm-only-m-r-20 xs-m-r-10i" style="color: #111;font-weight: 700;font-size: 15px;">
+  Affiliate Program</a>
+<a href="docs.htm" tppabs="https://convertify.app/docs" class="fs-15 av-heavy color-black m-r-30 m-r-30footer sm-only-m-r-20 xs-m-r-10i" style="color: #111;font-weight: 700;font-size: 15px;">
+  Docs</a>
+<a href="about.htm" tppabs="https://convertify.app/about" class="fs-15 av-heavy color-black m-r-30 m-r-30footer sm-only-m-r-20 xs-m-r-10i" style="color: #111;font-weight: 700;font-size: 15px;">
+  About</a>
+<a href="index-3.htm" tppabs="https://convertify.app/blog" class="fs-15 av-heavy color-black m-r-30 m-r-30footer sm-only-m-r-20 xs-m-r-10i" style="color: #111;font-weight: 700;font-size: 15px;">
+  Blog</a>
+<a href="contact.htm" tppabs="https://convertify.app/contact" class="fs-15 av-heavy color-black m-r-30 m-r-30footer sm-only-m-r-20 xs-m-r-10i" style="color: #111;font-weight: 700;font-size: 15px;">
+  Contact</a>
+<a href="terms.htm" tppabs="https://convertify.app/terms" class="fs-15 av-heavy color-black m-r-30 m-r-30footer sm-only-m-r-20 xs-m-r-10i" style="color: #111;font-weight: 700;font-size: 15px;">
+  Terms</a>
+<a href="reviews.htm" tppabs="https://convertify.app/reviews" class="fs-15 av-heavy color-black m-r-30 m-r-30footer sm-only-m-r-20 xs-m-r-10i" style="color: #111;font-weight: 700;font-size: 15px;">
+  Reviews</a>
+
+  <div :class='{"open": articles, "dropup": true, "m-r-30": true, "m-r-30footer-tip": true}' style="display: initial;">
+  <a @click="articles_method" class="dropdown-toggle" style="color: #111;font-weight: 700;font-size: 15px;">Articles  <span class="caret"></span></a>
+  <ul style="padding: 0px 0 0 0!important;" class="dropdown-menu">
+  <li class="ph-link"><a target="_blank" href="javascript:if(confirm('https://www.producthunt.com/posts/convertify  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.producthunt.com/posts/convertify'" tppabs="https://www.producthunt.com/posts/convertify">
+  <span>Product Hunt</span>
+  </a></li>
+  <li class="ih-link"><a target="_blank" href="javascript:if(confirm('https://www.indiehackers.com/product/convertify  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.indiehackers.com/product/convertify'" tppabs="https://www.indiehackers.com/product/convertify">
+  <span>Indie Hackers</span>
+  </a></li>
+  <li class="medium-link"><a href="javascript:if(confirm('https://medium.com/@lucas/we-reached-product-3-of-the-day-on-product-hunt-and-this-is-what-happened-f03c01f897a  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://medium.com/@lucas/we-reached-product-3-of-the-day-on-product-hunt-and-this-is-what-happened-f03c01f897a'" tppabs="https://medium.com/@lucas/we-reached-product-3-of-the-day-on-product-hunt-and-this-is-what-happened-f03c01f897a">
+  <span>Medium</span>
+  </a></li>
+  <li class="oyestartups-link"><a target="_blank" href="javascript:if(confirm('https://oyestartups.com/interviews/convertify  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://oyestartups.com/interviews/convertify'" tppabs="https://oyestartups.com/interviews/convertify">
+  <span>Oyestartups</span>
+  </a></li>
+  </ul>
+  </div>
+
+  <div :class='{"open": language, "dropup": true, "m-r-30": true, "m-r-30footer-tip": true}' style="display: initial;">
+  <a @click="language_method" class="dropdown-toggle" style="color: #111;font-weight: 700;font-size: 15px;">Language  <span class="caret"></span></a>
+  <ul style="padding: 0px 0 0 0!important;" class="dropdown-menu">
+  <li class="ph-link"><a href="index.htm" tppabs="https://convertify.app/">
+  <span>English [EN]</span>
+  </a></li>
+  <li class="ih-link"><a href="es.htm" tppabs="https://convertify.app/es">
+  <span>EspaÃ±ol [ES]</span>
+  </a></li>
+  </ul>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="flex flex-center social-m-t-20">
+  <ul class="f-links">
+  <li><a class="about-social" target="_blank" href="javascript:if(confirm('https://twitter.com/ConvertifyApp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://twitter.com/ConvertifyApp'" tppabs="https://twitter.com/ConvertifyApp"><img src="twitter-footer-logo.png" tppabs="https://convertify.app/assets/img/home/twitter-footer-logo.png" alt="Twitter"></img></a></li>
+  <li><a class="about-social" target="_blank" href="javascript:if(confirm('https://facebook.com/convertifyapp  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://facebook.com/convertifyapp'" tppabs="https://facebook.com/convertifyapp"><img src="facebook.png" tppabs="https://convertify.app/assets/img/home/facebook.png" alt="Facebook"></img></a></li>
+  <li><a class="about-social" target="_blank" href="javascript:if(confirm('https://www.linkedin.com/company/convertifyapp/  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.linkedin.com/company/convertifyapp/'" tppabs="https://www.linkedin.com/company/convertifyapp/"><img src="sm-linkedin.png" tppabs="https://convertify.app/assets/img/home/sm-linkedin.png" alt="Linkedin"></img></a></li>
+  <li><a class="about-social" target="_blank" href="javascript:if(confirm('https://www.youtube.com/c/convertify  \n\n¸ÃÎÄ¼þÎÞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·þÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.youtube.com/c/convertify'" tppabs="https://www.youtube.com/c/convertify"><img src="youtube.png" tppabs="https://convertify.app/assets/img/home/youtube.png" alt="YouTube"></img></a></li>
+  </ul>
+</div>
+</div>
+
+<div class="text-center m-t-30 p-b-15 copyright" style="padding-bottom: 24px;">Â© 2018-2025 Convertify</div>
+<div style="display:none"><img src="3.png" tppabs="https://whos.amung.us/swidget/convertify.png"></div>
+</div>
+
+
+
+<!-- footer -->
+<!-- <script src="/js/convertify.js"></script> -->
+<!-- <script src="/js/body.js"></script> -->
+<style>
+@import url("css-family=Open+Sans-400,600.css")/*tpa=https://fonts.googleapis.com/css?family=Open+Sans:400,600*/;
+.custom-social-proof {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9 !important;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+  }
+    .custom-notification {
+        width: 340px;
+        border: 0;
+        text-align: left;
+        /* z-index: 99999; */
+        box-sizing: border-box;
+        font-weight: 400;
+        border-radius: 6px;
+        box-shadow: 2px 2px 10px 2px hsla(0, 4%, 4%, 0.2);
+        background-color: #fff;
+        position: relative;
+        cursor: pointer;
+      }
+      @media (max-width:767px) {
+        .custom-notification {
+            width: 330px;
+          }
+      }
+        .custom-notification-container {
+            display: flex !important;
+            align-items: center;
+            height: 80px;
+          }
+            .custom-notification-image-wrapper {
+                    max-height: 60px!important;
+                    width: 60px!important;
+                    overflow: hidden!important;
+                    border-radius: 6px 0 0 6px!important;
+                    object-fit: cover!important;
+                    margin-left: 10px!important;
+            }
+            .custom-notification-content-wrapper {
+                margin: 0;
+                height: 100%;
+                color: gray;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 0 6px 6px 0;
+                flex: 1;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+              }
+                .custom-notification-content {
+                    font-family: inherit !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                    font-size: 14px;
+                    line-height: 16px;
+                  }
+                    small {
+                        margin-top: 3px !important;
+                        display: block !important;
+                        font-size: 12px !important;
+                        opacity: .8;
+                    }
+        .custom-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            height: 12px;
+            width: 12px;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+            transform: rotate(45deg);
+            opacity: 0;
+          }
+          .custom-close::before {
+               content: "";
+               display: block;
+               width: 100%;
+               height: 2px;
+               background-color: gray;
+               position: absolute;
+               left: 0;
+               top: 5px;
+           }
+           .custom-close::after {
+               content: "";
+               display: block;
+               height: 100%;
+               width: 2px;
+               background-color: gray;
+               position: absolute;
+               left: 5px;
+               top: 0;
+           }
+       .custom-notification:hover .custom-close  {
+               opacity: 1;
+       }
+@media (max-width: 991px){
+.mob-footer {
+    justify-content: center!important;
+    display: flex!important;
+    flex-wrap: wrap;
+}
+.m-r-20footer{
+  margin-right:0px!important;
+  }
+  .m-r-30footer {
+      padding: 15px;
+      margin-right: 0px!important;
+      line-height: 40px;
+  }
+  .paddingresmobile{
+    padding-bottom: 475px!important;
+  }}
+@media (max-width: 767px){
+.mob-ftr-left {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.mob-ftr-block {
+  width: 100%;
+  display: initial;
+  padding: 35px;
+}
+.footer-links {
+    flex-wrap: wrap;
+}
+.ftr-mb-w-100 {
+    width: 100%;
+}}
+</style>
+
+<script>
+var frank = new Vue({
+  el:'#elfooter',
+  data:{
+    articles: false,
+    language: false
+  },
+  methods: {
+    articles_method(){
+      if(!this.articles){
+        this.articles = true;
+      }
+      else{
+        this.articles = false;
+      }
+    },
+    language_method(){
+      if(!this.language){
+        this.language = true;
+      }
+      else{
+        this.language = false;
+      }
+    }
+        }
+});
+</script>
+
+
+    <!-- <script src="/assets/build/js/build.min.4.0.2.js"></script> -->
+
+
+
+<script type="text/javascript">
+$(document).on('ready',function() {
+  $('.dummy-wrapper').hide();
+  $('.explore-slider').fadeIn();
+
+  $('.responsive').slick({
+  dots: true,
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
+  infinite: false,
+  speed: 800,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+  nLazy();
+  });
+</script>
+
+</body>
+</html>
